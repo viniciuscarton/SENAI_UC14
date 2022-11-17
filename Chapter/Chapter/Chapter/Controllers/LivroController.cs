@@ -1,21 +1,27 @@
 ﻿using Chapter.Models;
 using Chapter.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Net.NetworkInformation;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Chapter.Controllers
+
 {
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
+
+    [Authorize(Roles = "0")]
     public class LivroController : ControllerBase
     {
         private readonly LivroRepository _livroRepository;
+
         public LivroController(LivroRepository livroRepository)
         {
             _livroRepository = livroRepository;
         }
+
         [HttpGet]
         public IActionResult Listar()
         {
@@ -23,45 +29,52 @@ namespace Chapter.Controllers
             {
                 return Ok(_livroRepository.Listar());
             }
-            catch(Exception e)
+            catch (Exception e)
+
             {
                 throw new Exception(e.Message);
             }
-            
         }
         [HttpGet("{id}")]
-        public IActionResult BuscarId(int id) 
+
+        public IActionResult BuscarId(int id)
         {
             try
             {
                 Livro livro = _livroRepository.BuscarId(id);
-                if(livro == null)
+
+                if (livro == null)
                 {
                     return NotFound();
                 }
                 return Ok(livro);
             }
-            catch(Exception)
+
+            catch (Exception)
             {
                 throw;
             }
+
+
         }
 
         [HttpPost]
+
         public IActionResult Cadastrar(Livro livro)
+
         {
+
             try
             {
                 _livroRepository.Cadastrar(livro);
-                return StatusCode(201);
+                return Ok(livro);
             }
-            catch(Exception)
+
+            catch (Exception)
             {
                 throw;
             }
-
         }
-
         [HttpPut("{id}")]
         public IActionResult Atualizar(int id, Livro livro)
         {
@@ -74,20 +87,25 @@ namespace Chapter.Controllers
             {
                 throw;
             }
+
         }
-        [HttpDelete("{id}")]
-        public IActionResult Deletar (int id)
+        [HttpDelete]
+        public IActionResult Deletar(int id)
         {
             try
             {
                 _livroRepository.Deletar(id);
                 return StatusCode(204);
+
             }
-            catch(Exception)
+            catch (Exception)
             {
                 throw;
             }
         }
 
+
     }
+
+
 }

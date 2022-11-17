@@ -77,3 +77,4 @@ C:\Users\Vinicius\Desktop\vscode\UC14\ER1\Chapter\Chapter\Chapter\obj\Debug\net6
 C:\Users\Vinicius\Desktop\vscode\UC14\ER1\Chapter\Chapter\Chapter\obj\Debug\net6.0\Chapter.pdb
 C:\Users\Vinicius\Desktop\vscode\UC14\ER1\Chapter\Chapter\Chapter\obj\Debug\net6.0\Chapter.genruntimeconfig.cache
 C:\Users\Vinicius\Desktop\vscode\UC14\ER1\Chapter\Chapter\Chapter\obj\Debug\net6.0\ref\Chapter.dll
+C:\Users\Vinicius\Desktop\vscode\UC14\ER1\Chapter\Chapter\Chapter\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

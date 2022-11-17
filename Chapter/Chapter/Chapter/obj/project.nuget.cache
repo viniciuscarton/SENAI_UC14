@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "IsaR1ZHFMA+3+1QbcIXXwMgvz3ufsVjyJDy1CUhb4y1kNsRKLGQA7RKU2Fwbc1M0rJVWGZ/qxUJG0os+h7fJ8A==",
+  "dgSpecHash": "+Mq85CseFC5YN+P6RobEulrCEn9yhq5Plx7N9yAwIbZNcs8WU4+HzAT/P2qwnHDmkl2zD1xvufkG46qP9t/R+g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Vinicius\\Desktop\\vscode\\UC14\\ER1\\Chapter\\Chapter\\Chapter\\Chapter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vinicius\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Vinicius\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Vinicius\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.10\\microsoft.aspnetcore.authentication.jwtbearer.6.0.10.nupkg.sha512",
     "C:\\Users\\Vinicius\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Vinicius\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Vinicius\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
