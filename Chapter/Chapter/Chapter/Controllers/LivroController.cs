@@ -12,7 +12,7 @@ namespace Chapter.Controllers
     [Route("api/[controller]")]
     [ApiController]
 
-    [Authorize(Roles = "0")]
+    //[Authorize]
     public class LivroController : ControllerBase
     {
         private readonly LivroRepository _livroRepository;
@@ -36,7 +36,7 @@ namespace Chapter.Controllers
             }
         }
         [HttpGet("{id}")]
-
+        [Authorize]
         public IActionResult BuscarId(int id)
         {
             try
